@@ -8,9 +8,9 @@ import { RootState, SampleStoreState } from '../../../typings/vue'
 /**
  *  @desc 
  * 
- *  @author Chip Moeser @ADW
+ *  @author Chip Moeser
  *
- *  Thu Jan 24 16:21:07 EST 2019
+ *  Sun Jan 27 14:53:23 EST 2019
  */
 export const actions: ActionTree<SampleStoreState, RootState> = {
     /**
