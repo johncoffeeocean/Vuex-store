@@ -1,6 +1,6 @@
 import { mutationTypes } from '../mutation-types'
 import { getterTypes } from '../getter-types'
-import { Module, Mutation, VuexModule, getModule } from 'vuex-module-decorators'
+import { Module, Mutation, VuexModule } from 'vuex-module-decorators'
 import { FPOptions } from '~/src/typings/vue'
 
 /**

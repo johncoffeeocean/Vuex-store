@@ -1,7 +1,7 @@
-import { getterTypes } from '../getter-types'
-import { mutationTypes } from '../mutation-types'
-import { Module, Mutation, VuexModule, getModule } from 'vuex-module-decorators'
-import { AppColors } from '~/src/typings/vue'
+import { getterTypes } from "../getter-types";
+import { mutationTypes } from "../mutation-types";
+import { Module, Mutation, VuexModule} from "vuex-module-decorators";
+import { AppColors } from "~/src/typings/vue";
 
 /**
  *  @name - AppState
@@ -16,7 +16,7 @@ import { AppColors } from '~/src/typings/vue'
 @Module({
   stateFactory: true,
   namespaced: true,
-  name: 'appState'
+  name: "appState"
 })
 export default class AppModule extends VuexModule {
   /**
@@ -27,7 +27,7 @@ export default class AppModule extends VuexModule {
    * @returns - this.menuMobileIsOpened: boolean
    */
   get [getterTypes.GET_MOBILE_MENU_OPEN](): boolean {
-    return this.menuMobileIsOpened
+    return this.menuMobileIsOpened;
   }
   /**
    * AppColors
@@ -37,17 +37,17 @@ export default class AppModule extends VuexModule {
    * @type - AppColors - ~/src/typings/vue
    */
   appColors: AppColors = {
-    lakeBlue: '#002b49',
-    midnightBlue: '#002639',
-    innovativeRed: '#ff4438',
-    coolSlate: '#323e48',
-    techSilver: '#cfd2d3',
-    letsGoGreen: '#00bbb4',
-    winterSkyBlue: '#63cfe3',
-    adventurYellow: '#ffd600',
-    white: '#ffffff',
-    black: '#000000'
-  }
+    lakeBlue: "#002b49",
+    midnightBlue: "#002639",
+    innovativeRed: "#ff4438",
+    coolSlate: "#323e48",
+    techSilver: "#cfd2d3",
+    letsGoGreen: "#00bbb4",
+    winterSkyBlue: "#63cfe3",
+    adventurYellow: "#ffd600",
+    white: "#ffffff",
+    black: "#000000"
+  };
   /**
    * menuMobileIsOpened
    *
@@ -55,7 +55,7 @@ export default class AppModule extends VuexModule {
    *
    * @type - boolean
    */
-  protected menuMobileIsOpened: boolean = false
+  protected menuMobileIsOpened: boolean = false;
   /**
    * baseURL
    *
@@ -64,7 +64,7 @@ export default class AppModule extends VuexModule {
    * @type - string
    *
    */
-  protected baseURL: string = 'https://myapi.com'
+  protected baseURL: string = "https://myapi.com";
   /**
    * animationShown
    *
@@ -83,7 +83,7 @@ export default class AppModule extends VuexModule {
    */
   @Mutation
   [mutationTypes.SET_MENU_MOBILE_OPEN](value: boolean): void {
-    this.menuMobileIsOpened = value
+    this.menuMobileIsOpened = value;
   }
   /**
    * SET_ANIMATION_SHOW
@@ -94,7 +94,7 @@ export default class AppModule extends VuexModule {
    */
   @Mutation
   [mutationTypes.SET_ANIMATION_SHOWN](value: boolean): void {
-    this.animationShown = value
+    this.animationShown = value;
   }
 }
 
