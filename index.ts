@@ -1,19 +1,11 @@
-import Vue from 'vue'
-import Vuex, { StoreOptions } from 'vuex'
-import { RootState } from '../typings/vue'
-import sampleStore from './modules/person/person'
+import AppState from './modules/appState'
+import SlidesState from './modules/slidesState'
 
-Vue.use(Vuex)
+export const state = () => ({
+  counter: 0
+})
 
-const store: StoreOptions<RootState> = {
-  state: {
-    version: '1.0.0' // a simple property
-  },
-  modules: {
-    sampleStore: sampleStore
-  }
+export const modules = {
+  appState: AppState,
+  slidesState: SlidesState
 }
-
-const createStore = () => new Vuex.Store(store)
-
-export default createStore
