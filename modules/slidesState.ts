@@ -117,4 +117,3 @@ export default class SlidesModule extends VuexModule {
   }
 }
 
-// export default getModule(SlidesModule)

@@ -97,5 +97,3 @@ export default class AppModule extends VuexModule {
     this.animationShown = value;
   }
 }
-
-// export default getModule(AppModule)
