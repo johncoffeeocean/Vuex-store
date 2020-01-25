@@ -30,7 +30,7 @@ export default class AppModule extends VuexModule {
     return this.menuMobileIsOpened;
   }
   /**
-   * AppColors
+   * @name - AppColors
    *
    * @description - Colors for the app
    *
@@ -49,7 +49,7 @@ export default class AppModule extends VuexModule {
     black: "#000000"
   };
   /**
-   * menuMobileIsOpened
+   * @name - menuMobileIsOpened
    *
    * @description - The state of the mobile menu true/false
    *
@@ -57,7 +57,7 @@ export default class AppModule extends VuexModule {
    */
   protected menuMobileIsOpened: boolean = false;
   /**
-   * baseURL
+   * @name - baseURL
    *
    * @description - URL of the Backend API
    *
@@ -66,7 +66,7 @@ export default class AppModule extends VuexModule {
    */
   protected baseURL: string = "https://myapi.com";
   /**
-   * animationShown
+   * @name - animationShown
    *
    * @description - Has the intro animation been show?
    *
@@ -75,7 +75,7 @@ export default class AppModule extends VuexModule {
   protected animationShown: boolean = false;
 
   /**
-   * SET_MENU_MOBILE_OPEN
+   * @name - SET_MENU_MOBILE_OPEN
    *
    * @description - Sets the state of the mobile menu menuMobileIsOpened true/false
    *
@@ -86,7 +86,7 @@ export default class AppModule extends VuexModule {
     this.menuMobileIsOpened = value;
   }
   /**
-   * SET_ANIMATION_SHOW
+   * @name - SET_ANIMATION_SHOW
    *
    * @description - Sets whether the intro animation has been shown
    *
