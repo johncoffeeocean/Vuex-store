@@ -20,7 +20,7 @@ import { AppColors } from "~/src/typings/vue";
 })
 export default class AppModule extends VuexModule {
   /**
-   * GET_MOBILE_MENU_OPEN
+   * @name - GET_MOBILE_MENU_OPEN
    *
    * @description - Gets the state of the mobile menu menuMobileIsOpened true/false
    *
